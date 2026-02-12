@@ -5,8 +5,8 @@ import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/the-beatles-carousel/',
   plugins: [
-    base: '/the-beatles-carousel/'
     svgr(),
     tailwindcss(),
     react({
