@@ -10,7 +10,7 @@ import {
   useState,
   type ComponentType,
   type RefAttributes,
-  type SVGProps,
+  type SVGProps as ReactSVGProps,
 } from "react";
 import { useAnimate } from "./assets/hooks/useAnimate";
 import gsap from "gsap";
@@ -18,7 +18,9 @@ import { IoRefreshCircleOutline } from "react-icons/io5";
 
 type CharacterSlideProps = {
   bg: string;
-  Svg: ComponentType<SVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>>;
+  Svg: ComponentType<
+    ReactSVGProps<SVGSVGElement> & RefAttributes<SVGSVGElement>
+  >;
   isActive: boolean;
   onCharacterClick: (id: string) => void;
 };
