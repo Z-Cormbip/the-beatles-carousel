@@ -117,9 +117,6 @@ const App = () => {
           setShowRefreshButton(true);
         }, 1000);
       }, 2200);
-    } else {
-      setShowFinalFrame(false);
-      setShowRefreshButton(false);
     }
 
     return () => {
